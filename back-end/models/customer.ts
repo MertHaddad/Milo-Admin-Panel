@@ -3,10 +3,9 @@ import { Table, Model, Column, DataType } from "sequelize-typescript";
 
 @Table({
   timestamps: true,
-  tableName: "user",
+  tableName: "customer",
 })
-
-export class User extends Model {
+export class Customer extends Model {
   @Column({
     type: DataType.STRING,
     allowNull: false,
@@ -17,11 +16,11 @@ export class User extends Model {
     type: DataType.STRING,
     allowNull: false,
   })
-  password!: string;
+  birthday!: string;
 
   @Column({
     type: DataType.BOOLEAN,
     allowNull: false,
   })
-  admin!: boolean;
+  job!: string;
 }

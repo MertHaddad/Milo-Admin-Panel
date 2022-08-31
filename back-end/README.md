@@ -1,16 +1,20 @@
 # Node.js TypeScript Template
 
 npm run build just first time.  
-npm run start is enough 😉
+the run : nodemon 😉
 
 included packages:  
+ "typescript",  
+ "@types/express",  
  "express",  
  "ts-node"  
- "@types/express",  
  "@typescript-eslint/eslint-plugin",  
  "@typescript-eslint/parser",  
  "eslint",  
  "eslint-config-prettier",  
  "eslint-plugin-prettier",  
  "nodemon",  
- "typescript"
+ "sequelize-typescript",  
+ "sequelize",  
+ "winston",  
+ "winston-daily-rotate-file",

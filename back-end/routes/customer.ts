@@ -1,14 +1,14 @@
 import express, { Request, Response } from "express";
 import { logger } from "../config/logger";
-import { createUser, getUsers } from "../dbService/userService";
+import { createCustomer, getCustomers } from "../dbService/customerService";
 
-const userRoute = express.Router();
+const customerRoute = express.Router();
 
-userRoute.get(
-  "/users",
+customerRoute.get(
+  "/customers",
   async (req: Request, res: Response): Promise<Response> => {
     try {
-      const users = await getUsers();
+      const users = await getCustomers();
       return res.status(200).json(users);
     } catch (error) {
       logger.error(error);
@@ -17,11 +17,11 @@ userRoute.get(
   }
 );
 
-userRoute.post(
-  "/user",
+customerRoute.post(
+  "/customer",
   async (req: Request, res: Response): Promise<Response> => {
     try {
-      const user = await createUser(req.body);
+      const user = await createCustomer(req.body);
       return res.status(201).json(user);
     } catch (error) {
       logger.error(error);
@@ -30,4 +30,4 @@ userRoute.post(
   }
 );
 
-export default userRoute;
+export default customerRoute;
