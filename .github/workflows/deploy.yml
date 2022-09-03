@@ -3,6 +3,9 @@ name: Github Page Deploy Workflow
 on:
   push:
     branches: [main]
+  defaults:
+    run:
+      working-directory: ./front-end
 
 jobs:
   deploy:
