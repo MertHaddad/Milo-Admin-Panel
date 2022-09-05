@@ -1,13 +1,28 @@
 import React, { useState, useEffect } from "react";
 
-const Navbar: React.FC = () => {
+interface Props {
+  collapseSidebar: Boolean;
+  setCollapseSidebar: Function;
+}
+
+const Navbar: React.FC<Props> = (props) => {
+  console.log(props.collapseSidebar);
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <strong>M.A.P</strong>
-          </a>
+          <button
+            onClick={() => {
+              props.setCollapseSidebar(!props.collapseSidebar);
+            }}
+            type="button"
+            id="sidebarCollapse"
+            className={`btn btn-primary`}
+          >
+            <i className="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+          </button>
           <button
             className="navbar-toggler"
             type="button"

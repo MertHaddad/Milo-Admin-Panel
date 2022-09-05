@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./scss/styles.scss";
-import App from "./pages/App";
 import reportWebVitals from "./reportWebVitals";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./scss/custom.scss";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Provider } from "react-redux";
@@ -12,7 +11,6 @@ import store from "./redux/store";
 import Child from "./pages/child";
 import Home from "./pages/home";
 import Test from "./pages/test";
-import Navbar from "./components/navbar";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -21,13 +19,11 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-      <Navbar />
         <Routes>
-            <Route path="/" element={<App />}>
+            <Route path="/" element={<Home />}>
               <Route path="child" element={<Child />} />
             </Route>
           <Route path="test" element={<Test />} />
-          <Route path="home" element={<Home />}/>
         </Routes>
       </BrowserRouter>
     </Provider>
