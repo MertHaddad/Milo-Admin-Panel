@@ -20,9 +20,9 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home />}>
-              <Route path="child" element={<Child />} />
-            </Route>
+          <Route path="/" element={<Home />}>
+            <Route path="child" element={<Child />} />
+          </Route>
           <Route path="test" element={<Test />} />
         </Routes>
       </BrowserRouter>

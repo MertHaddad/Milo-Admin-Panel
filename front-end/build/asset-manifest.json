@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/merth-admin-panel/static/css/main.5ecc79c8.css",
-    "main.js": "/merth-admin-panel/static/js/main.2685d277.js",
+    "main.css": "/merth-admin-panel/static/css/main.7958f5d7.css",
+    "main.js": "/merth-admin-panel/static/js/main.ff39e404.js",
     "static/js/787.3c11fe98.chunk.js": "/merth-admin-panel/static/js/787.3c11fe98.chunk.js",
     "static/media/bootstrap-icons.woff?": "/merth-admin-panel/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/merth-admin-panel/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "index.html": "/merth-admin-panel/index.html",
-    "main.5ecc79c8.css.map": "/merth-admin-panel/static/css/main.5ecc79c8.css.map",
-    "main.2685d277.js.map": "/merth-admin-panel/static/js/main.2685d277.js.map",
+    "main.7958f5d7.css.map": "/merth-admin-panel/static/css/main.7958f5d7.css.map",
+    "main.ff39e404.js.map": "/merth-admin-panel/static/js/main.ff39e404.js.map",
     "787.3c11fe98.chunk.js.map": "/merth-admin-panel/static/js/787.3c11fe98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ecc79c8.css",
-    "static/js/main.2685d277.js"
+    "static/css/main.7958f5d7.css",
+    "static/js/main.ff39e404.js"
   ]
 }
