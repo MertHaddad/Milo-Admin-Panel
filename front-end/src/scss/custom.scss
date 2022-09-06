@@ -20,6 +20,7 @@ $input-bg: #1b2531;
 $input-focus-bg: #1b2531;
 $input-color: $border;
 $input-plaintext-color: $border;
+$card-bg: $dark;
 
 // $dark: #16191b;
 
@@ -44,7 +45,7 @@ $theme-colors: (
   border: $border,
   // add any additional color below
   // accent: $accent,
-  // now bg-accent,btn-accent,etc.. can be called,,,,,
+  // now bg-accent,btn-accent,etc.. can be called,,,,,,
 );
 body {
   margin: 0;
@@ -207,11 +208,9 @@ a[data-toggle="collapse"] {
 }
 
 .dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  display: inline;
+  transform: translateY(50%);
+  transform: translateX(150%);
 }
 
 ul ul a {
