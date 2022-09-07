@@ -24,23 +24,25 @@ const data02 = [
 export default function Pie1() {
   return (
     <div style={{ width: "100%", height: 300 }}>
+            <h4 className="p-0 text-center">Groups ratio</h4>
+
       <ResponsiveContainer>
         <PieChart width={400} height={400}>
           <Pie
             data={data01}
             dataKey="value"
-            cx={200}
-            cy={200}
-            outerRadius={60}
+            cx={130}
+            cy={120}
+            outerRadius={40}
             fill="#8884d8"
           />
           <Pie
             data={data02}
             dataKey="value"
-            cx={200}
-            cy={200}
-            innerRadius={70}
-            outerRadius={90}
+            cx={130}
+            cy={120}
+            innerRadius={50}
+            outerRadius={60}
             fill="#82ca9d"
             label
           />

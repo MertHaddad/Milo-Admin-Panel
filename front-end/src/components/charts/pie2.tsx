@@ -28,9 +28,9 @@ const renderActiveShape = (props: any) => {
   const cos = Math.cos(-RADIAN * midAngle);
   const sx = cx + (outerRadius + 10) * cos;
   const sy = cy + (outerRadius + 10) * sin;
-  const mx = cx + (outerRadius + 30) * cos;
+  const mx = cx + (outerRadius + 22) * cos;
   const my = cy + (outerRadius + 30) * sin;
-  const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+  const ex = mx + (cos >= 0 ? 1 : -1) * 0;
   const ey = my;
   const textAnchor = cos >= 0 ? "start" : "end";
 
@@ -63,20 +63,20 @@ const renderActiveShape = (props: any) => {
         fill="none"
       />
       <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-      <text
+      {/* <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         textAnchor={textAnchor}
         fill="#333"
-      >{`PV ${value}`}</text>
+      >{`PV ${value}`}</text> */}
       <text
-        x={ex + (cos >= 0 ? 1 : -1) * 12}
+        x={ex + (cos >= 0 ? 1 : -1) * 0}
         y={ey}
         dy={18}
         textAnchor={textAnchor}
         fill="#999"
       >
-        {`(Rate ${(percent * 100).toFixed(2)}%)`}
+        {`${(percent * 100).toFixed(0)}%`}
       </text>
     </g>
   );
@@ -93,14 +93,15 @@ export default function Pie2() {
 
   return (
     <div style={{ width: '100%', height: 300 }}>
-    <ResponsiveContainer>
-    <PieChart width={400} height={400}>
+      <h4 className="p-0 text-center">Groups ratio</h4>
+    <ResponsiveContainer width={"100%"} height={"100%"}>
+    <PieChart >
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
-        innerRadius={60}
-        outerRadius={80}
+        innerRadius={50}
+        outerRadius={70}
         fill="#8884d8"
         dataKey="value"
         onMouseEnter={onPieEnter}

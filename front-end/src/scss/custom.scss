@@ -6,7 +6,7 @@
 // you can open the bootstrap.scss module and check any available variables.
 $primary: #3e79f7;
 $secondary: #293a80;
-$success: #858b95;
+$success: #04e000;
 $info: #f39422;
 $warning: #b8c924;
 $danger: #d62518;
@@ -54,6 +54,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 //side bar starts here ...............................................//////////////////////////////////
