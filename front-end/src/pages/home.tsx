@@ -10,11 +10,13 @@ import Pie1 from "../components/charts/pie1";
 import Bar1 from "../components/charts/bar";
 import Counter from "../components/charts/counter";
 import TLine from "../components/charts/line";
+import ApexPie from "../components/apexCharts/apexPie";
 //component moved out of the main comp. to prevent unnecessary rerendering.
 const bar = <Bar1 />;
 const tline = <TLine />;
 
-const pie2 = <Pie2 />;
+const pie2 = <ApexPie />;
+// const pie2 = <Pie2 />;
 const counter = (
   <Counter
     status={true}
