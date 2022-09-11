@@ -9,7 +9,7 @@ const Card = (props: Props) => {
   return (
     <>
       {/* <div className="card" style={{"width: 18rem;"}}> */}
-      <div className="card">
+      <div className="card h-100 ">
         <div className="card-body">{props.char}
         {props.char2}
         
