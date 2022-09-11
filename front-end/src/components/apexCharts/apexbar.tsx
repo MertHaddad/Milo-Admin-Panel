@@ -32,7 +32,7 @@ class ApexBar extends React.Component<any, any> {
             show: false,
           },
         },
-        colors: ["#04e000", "#FF4560"],
+        colors: ["gray", "#FF4560"],
         legend: {
           labels: {
             colors: "#04e000",

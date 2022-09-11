@@ -13,6 +13,7 @@ import TLine from "../components/charts/line";
 import ApexPie from "../components/apexCharts/apexPie";
 import ApexTimeline from "../components/apexCharts/apexTimeline";
 import ApexBar from "../components/apexCharts/apexbar";
+import Clock from "../components/clock";
 // import ApexHeatmap from "../components/apexCharts/apexHeatmap";
 //component moved out of the main comp. to prevent unnecessary rerendering.
 const bar = <Bar1 />;
@@ -21,6 +22,7 @@ const apexPie = <ApexPie />;
 const pie2 = <Pie2 />;
 const apexTimeline = <ApexTimeline />;
 const apexBar = <ApexBar />;
+const clock = <Clock />;
 // const apexHeatmap = <ApexHeatmap/>
 
 const counter = (
@@ -54,7 +56,7 @@ const counter3 = (
 const Home: FC = () => {
   const count = useSelector(selectCount);
   const name = useSelector(selectName);
-  const [collapseSidebar, setCollapseSidebar] = useState<Boolean>(false);
+  const [collapseSidebar, setCollapseSidebar] = useState<Boolean>(true);
 
   return (
     <>
@@ -79,6 +81,9 @@ const Home: FC = () => {
                 </div>
                 <div className="col">
                   <Card char={counter3} />
+                </div>
+                <div className="col">
+                  <Card char={clock} />
                 </div>
               </div>
               <div className="row  py-3">
