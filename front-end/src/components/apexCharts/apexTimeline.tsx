@@ -144,7 +144,7 @@ class ApexTimeline extends Component<any, any> {
   render() {
     return (
       <div id="chart">
-        <h4 className="text-center">Working Timeline</h4>
+        <h4 className="text-center card-title">Working Timeline</h4>
         <ReactApexChart
           options={this.state.options}
           series={this.state.series}

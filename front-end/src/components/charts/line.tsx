@@ -54,8 +54,8 @@ export default function TLine() {
       <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
     </LineChart>
     </ResponsiveContainer>
-    <h4 className="p-0 text-center">Active Members</h4>
-    <h4 className="p-0 text-center">+17000</h4>
+    <h4 className="p-0 text-center card-title">Active Members</h4>
+    <h4 className="p-0 text-center card-title">+17000</h4>
     </div>
   );
 }

@@ -97,7 +97,7 @@ class ApexPie extends React.Component<any,any> {
   render() {
     return (
       <>
-      <h4 className="text-center">Running Servers </h4>
+      <h4 className="text-center card-title">Running Servers </h4>
 <div id="card">
 <div id="chart">
 <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={260} />

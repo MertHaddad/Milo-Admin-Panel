@@ -12,12 +12,16 @@ import Counter from "../components/charts/counter";
 import TLine from "../components/charts/line";
 import ApexPie from "../components/apexCharts/apexPie";
 import ApexTimeline from "../components/apexCharts/apexTimeline";
+import ApexBar from "../components/apexCharts/apexbar";
+// import ApexHeatmap from "../components/apexCharts/apexHeatmap";
 //component moved out of the main comp. to prevent unnecessary rerendering.
 const bar = <Bar1 />;
 const tline = <TLine />;
 const apexPie = <ApexPie />;
 const pie2 = <Pie2 />;
-const apexTimeline = <ApexTimeline/>
+const apexTimeline = <ApexTimeline />;
+const apexBar = <ApexBar />;
+// const apexHeatmap = <ApexHeatmap/>
 
 const counter = (
   <Counter
@@ -66,28 +70,32 @@ const Home: FC = () => {
           />
           <div className="row px-4 ">
             <div className="col-md-9">
-            <div className="row">
-            <div className="col">
-              <Card char={counter} />
-            </div>
-            <div className="col">
-              <Card char={counter2} />
-            </div>
-            <div className="col">
-              <Card char={counter3} />
+              <div className="row">
+                <div className="col">
+                  <Card char={counter} />
+                </div>
+                <div className="col">
+                  <Card char={counter2} />
+                </div>
+                <div className="col">
+                  <Card char={counter3} />
+                </div>
+              </div>
+              <div className="row  py-3">
+                <div className="col-8">
+                  <div className="">
+                    <Card char={bar} />
+                  </div>
+                </div>
+                <div className="col-4">
+                  <Card char={apexBar} />
+                </div>
+              </div>
             </div>
 
-            </div>
-            <div className=" py-3">
-            <Card char={bar} />
-
-            </div>
-            </div>
-            
             <div className="col-md-3 ">
               <div className=" pb-3">
-              <Card char={pie2} />
-
+                <Card char={pie2} />
               </div>
               <div className="">
                 <Card char={tline} />
@@ -96,15 +104,16 @@ const Home: FC = () => {
           </div>
 
           <div className="row px-4">
-          <div className="col-md-9">
-          <Card char={apexTimeline}/>
-
+            <div className="col-md-9">
+              <Card char={apexTimeline} />
+            </div>
+            <div className="col-md-3">
+              <Card char={apexPie} />
+            </div>
           </div>
-          <div className="col-md-3">
-          <Card char={apexPie} />
+          <div className="row px-4 pt-3">
+            <div className="col">{/* <Card char={} /> */}</div>
           </div>
-          </div>
-
         </div>
       </div>
     </>
