@@ -24,7 +24,7 @@ const data02 = [
 export default function Pie1() {
   return (
     <div style={{ width: "100%", height: 300 }}>
-            <h4 className="p-0 text-center">Groups ratio</h4>
+            <h4 className="p-0 text-center card-title">Groups ratio</h4>
 
       <ResponsiveContainer>
         <PieChart width={400} height={400}>

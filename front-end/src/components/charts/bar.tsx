@@ -58,7 +58,7 @@ const data = [
 export default function Bar1() {
   return (
     <div style={{ width: "100%", height: 500 }}>
-      <h4 className="p-0 text-center">Data Chart</h4>
+      <h4 className="p-0 text-center card-title">Data Chart</h4>
 
       <ResponsiveContainer width={"100%"} height={450}>
         <LineChart
@@ -69,19 +69,21 @@ export default function Bar1() {
             left: 20,
             bottom: 5,
           }}
+          
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <CartesianGrid strokeDasharray="0.3 1" />
+          <XAxis stroke="#acbad2" fontSize={12} dataKey="name" />
+          <YAxis stroke="#acbad2" fontSize={12} />
           <Tooltip />
           <Legend />
           <Line
             type="monotone"
             dataKey="pv"
             stroke="#8884d8"
+            strokeWidth={2}
             activeDot={{ r: 8 }}
           />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d" strokeWidth={2} />
         </LineChart>
       </ResponsiveContainer>
     </div>
