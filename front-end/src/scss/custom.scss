@@ -25,13 +25,24 @@ $text: #acbad2;
 $border: #4d5b75;
 $input-border-color: $border;
 $input-bg: #1b2531;
+$primary-light:#787fff3f;
 $input-focus-bg: #1b2531;
+$input-focus-color: $text;
 $input-color: $border;
 $input-plaintext-color: $border;
 $card-bg: $dark;
 $button1:#787fff2f;
 $button2:#04e00079;
 $button3:#d6251884;
+$list-group-active-bg:              $primary;
+$list-group-active-border-color:    $primary;
+$list-group-color:                  $text;
+$list-group-bg:                     $dark;
+$list-group-border-color:           rgba($text, .125);
+$list-group-hover-bg:               $primary-light;
+$list-group-action-hover-color:     $text;
+$list-group-active-color:           $component-active-color;
+
 
 
 // $dark: #16191b;
@@ -62,6 +73,9 @@ $theme-colors: (
   // accent: $accent,
   // now bg-accent,btn-accent,etc.. can be called,,,,,,
 );
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -78,13 +92,13 @@ body {
   font-family: 'DotGothic16', sans-serif;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #999;
-}
+// p {
+//   font-family: "Poppins", sans-serif;
+//   font-size: 1.1em;
+//   font-weight: 300;
+//   line-height: 1.7em;
+//   color: #999;
+// }
 
 .card-title{
   color:$text
@@ -228,7 +242,7 @@ span {
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
   font-weight: bold;
-  background: #787fff3f;
+  background: $primary-light;
   border-right: 2px solid $primary;
 }
 #sidebar ul li.active > a> i{

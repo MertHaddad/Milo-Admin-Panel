@@ -7,41 +7,41 @@ import ChatContent from "../components/chat/content";
 import ChatFooter from "../components/chat/footer";
 
 const ChatPage = () => {
-  const { height } = useWindowDimensions();
+  const { height,width } = useWindowDimensions();
   const [activeChat, setActiveChat] = useState({});
   const [usersArray, setUserArray] = useState<any>([
     {
       name: "Michel John",
       date: "1 min ago",
       message: "Helo this is a long message to be sent",
-      quantity: "3",
-      sent: ["Hi", "How are you?", "Doing great!"],
-      receive: ["Hello", "I am fine Thanks, how are you doing?"],
+      quantity: "2",
+      receive: ["Hi", "How are you?", "Doing great!"],
+      sent: ["Hello", "I am fine Thanks, how are you doing?"],
       id: 0,
     },
     {
       name: "Andy Mark",
       date: "25 mins ago",
       message: "just a message",
-      quantity: "0",
+      quantity: "1",
       id: 1,
-      sent: ["Hi", "How are you?", "Doing great!"],
-      receive: ["Hello", "I am fine Thanks, how are you doing?"],
+      sent: ["Hey Andy", "I need to tell you something...", "Are you here??!"],
+      receive: ["Yup","🤦‍♂️","nope"],
     },
     {
       name: "Sara Marvel",
       date: "5 mins ago",
       message: "short message",
-      quantity: "1",
+      quantity: "3",
       id: 2,
-      sent: [],
-      receive: [],
+      sent: ["Are you up for a movie tonight?","Sure at home silly","I'm down bro!","Deal then","whatsapp","👀","for real man"],
+      receive: ["Hmmm, at home or?","I thought we would go out","I was born ready","😎","oh shoot","I forgot","sorry dude","u here?","🤔"],
     },
     {
       name: "Henry August",
       date: "25 mins ago",
       message: "just a message",
-      quantity: "0",
+      quantity: "",
       id: 3,
       sent: [],
       receive: [],
@@ -50,7 +50,7 @@ const ChatPage = () => {
       name: "Maya Jackson",
       date: "30 days ago",
       message: "well here we go again",
-      quantity: "3",
+      quantity: "",
       id: 4,
       sent: [],
       receive: [],
@@ -59,7 +59,7 @@ const ChatPage = () => {
       name: "Mike Stud",
       date: "5 mins ago",
       message: "another thing to tell",
-      quantity: "4",
+      quantity: "",
       id: 5,
       sent: [],
       receive: [],
@@ -77,7 +77,7 @@ const ChatPage = () => {
       name: "Michel Scot",
       date: "1 min ago",
       message: "Helo this is a long message to be sent",
-      quantity: "3",
+      quantity: "",
       id: 7,
       sent: [],
       receive: [],
@@ -86,7 +86,7 @@ const ChatPage = () => {
       name: "Jim Paly",
       date: "5 mins ago",
       message: "short message",
-      quantity: "1",
+      quantity: "",
       id: 8,
       sent: [],
       receive: [],
@@ -95,7 +95,7 @@ const ChatPage = () => {
       name: "Cramer Fikinston",
       date: "25 mins ago",
       message: "just a message",
-      quantity: "0",
+      quantity: "",
       id: 9,
       sent: [],
       receive: [],
@@ -104,7 +104,7 @@ const ChatPage = () => {
       name: "Maria Dabster",
       date: "30 days ago",
       message: "well here we go again",
-      quantity: "3",
+      quantity: "",
       id: 10,
       sent: [],
       receive: [],
@@ -113,7 +113,7 @@ const ChatPage = () => {
       name: "Steve Jobs",
       date: "5 mins ago",
       message: "another thing to tell",
-      quantity: "4",
+      quantity: "",
       id: 11,
       sent: [],
       receive: [],
@@ -131,7 +131,7 @@ const ChatPage = () => {
       name: "Ghandy Manstonn",
       date: "1 min ago",
       message: "Helo this is a long message to be sent",
-      quantity: "3",
+      quantity: "",
       id: 13,
       sent: [],
       receive: [],
@@ -140,7 +140,7 @@ const ChatPage = () => {
       name: "George Bally",
       date: "5 mins ago",
       message: "short message",
-      quantity: "1",
+      quantity: "",
       id: 14,
       sent: [],
       receive: [],
@@ -154,6 +154,7 @@ const ChatPage = () => {
           usersArray={usersArray}
           activeChat={activeChat}
           setActiveChat={setActiveChat}
+          width={width}
         />
         <div className="main-content h-100 g-0">
           {activeChat ? (

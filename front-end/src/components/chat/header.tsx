@@ -1,12 +1,13 @@
 import React from "react";
 import profileImage from "./../../assets/images/chat/profile.jpg";
-
+import Avatar from 'react-avatar';
 const ChatHeader = (props:any) => {
   return (
     <div className="row ">
       <div className=" chat-title ">
         <div>
-          <img src={profileImage} className="chat-avatar d-inline" alt="" />
+          {/* <img src={profileImage} className="chat-avatar d-inline" alt="" /> */}
+          <Avatar name={props.activeChat.name} round={true} size="40" />
           <p className="d-inline mx-2 text-white">{props.activeChat.name}</p>
         </div>
         <div>

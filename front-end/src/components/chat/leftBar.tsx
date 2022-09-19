@@ -1,5 +1,6 @@
 import React from "react";
 import profileImage from "./../../assets/images/chat/profile.jpg";
+import Avatar from 'react-avatar';
 
 const LeftChatBar = (props: any) => {
   return (
@@ -7,7 +8,8 @@ const LeftChatBar = (props: any) => {
       <div className="col-3  h-100 left-sidebar">
         <div className="row  g-0">
           <div className="left-bar-title">
-            <img src={profileImage} className="avatar" alt="" />
+            {/* <img src={profileImage} className="avatar" alt="" /> */}
+            <Avatar name="Wim Mostmans" round={true}  size="40" />
             <div>
               <button className="btn">
                 <i className="bi bi-chat-left-text mx-2"></i>
@@ -69,10 +71,11 @@ const LeftChatBar = (props: any) => {
                 aria-current="true"
               >
                 <div className="row">
-                  <div className="col-2">
-                    <img src={profileImage} className="avatar-min" alt="" />
+                  <div className={`col-2 avatar-min ${props.width<1400 && "d-none"}`}>
+                    {/* <img src={profileImage} className="avatar-min" alt="" /> */}
+                    <Avatar name={item.name}  round={true} size="35" />
                   </div>
-                  <div className="col-10">
+                  <div className="col-lg col-md-10">
                     <div className="d-flex w-100 justify-content-between">
                       <h6 className="mb-1">{item.name}</h6>
                       <small>{item.date}</small>
