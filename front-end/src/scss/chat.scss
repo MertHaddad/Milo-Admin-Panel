@@ -38,9 +38,9 @@
   }
   
   .avatar {
-    margin: 0.5rem 0 0 0.5rem;
-    height: 2.1rem;
-    border-radius: 50%;
+    margin: 2px 0 0 2px;
+    // height: 2.1rem;
+    // border-radius: 50%;
   }
   .avatar-min {
     align-self: center;
@@ -121,6 +121,10 @@
     margin-bottom: 10px;
   }
   
+  .pointer-curser{
+    cursor: pointer;
+  }
+
   .received-message{
     min-width: 10rem;
     max-height: 2rem;

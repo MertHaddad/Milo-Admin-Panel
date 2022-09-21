@@ -9,7 +9,7 @@ const LeftChatBar = (props: any) => {
         <div className="row  g-0">
           <div className="left-bar-title">
             {/* <img src={profileImage} className="avatar" alt="" /> */}
-            <Avatar name="Wim Mostmans" round={true}  size="40" />
+            <Avatar name="Wim Mostmans" round={true}  className="avatar" size="35" />
             <div>
               <button className="btn">
                 <i className="bi bi-chat-left-text mx-2"></i>
@@ -52,7 +52,7 @@ const LeftChatBar = (props: any) => {
         </div>
 
         <div className="row w-100  g-0 left-bar-list overflow-auto ">
-          <div className="list-group w-100 rounded-0 ">
+          <div className="list-group pointer-curser user-select-none w-100 rounded-0 ">
             {props.usersArray.map((item: any, i: any) => (
               <span
                 onClick={() => {

@@ -14,9 +14,9 @@ const ChatPage = () => {
       name: "Michel John",
       date: "1 min ago",
       message: "Helo this is a long message to be sent",
-      quantity: "2",
-      receive: ["Hi", "How are you?", "Doing great!"],
-      sent: ["Hello", "I am fine Thanks, how are you doing?"],
+      quantity: "1",
+      sent: ["Hi", "How are you?", "Doing great!"],
+      receive: ["Hello", "I am fine Thanks, how are you doing?"],
       id: 0,
     },
     {
@@ -34,7 +34,7 @@ const ChatPage = () => {
       message: "short message",
       quantity: "3",
       id: 2,
-      sent: ["Are you up for a movie tonight?","Sure at home silly","I'm down bro!","Deal then","whatsapp","👀","for real man"],
+      sent: ["Are you down for a movie tonight?","Sure at home silly","I'm down bro!","Deal then","whatsapp","👀","for real man"],
       receive: ["Hmmm, at home or?","I thought we would go out","I was born ready","😎","oh shoot","I forgot","sorry dude","u here?","🤔"],
     },
     {
@@ -130,7 +130,7 @@ const ChatPage = () => {
     {
       name: "Ghandy Manstonn",
       date: "1 min ago",
-      message: "Helo this is a long message to be sent",
+      message: "Hello this is a long message to be sent",
       quantity: "",
       id: 13,
       sent: [],
@@ -152,6 +152,7 @@ const ChatPage = () => {
       <div className="row h-100  ">
         <LeftChatBar
           usersArray={usersArray}
+          setUserArray={setUserArray}
           activeChat={activeChat}
           setActiveChat={setActiveChat}
           width={width}
