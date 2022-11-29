@@ -1,7 +1,7 @@
 {
   "name": "milo-admin-panel",
   "version": "0.1.1",
-  "homepage": "https://merthaddad.github.io/milo-admin-panel/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
