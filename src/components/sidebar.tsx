@@ -22,7 +22,7 @@ const Sidebar = (props: Props) => {
       className={`bg-dark ${props.collapseSidebar && "active"}`}
     >
       <div className="sidebar-header  bg-dark">
-        <h3>Merth AP</h3>
+        <h3>Milo AP</h3>
         <strong>MAP</strong>
       </div>
 

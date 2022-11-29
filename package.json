@@ -1,7 +1,7 @@
 {
-  "name": "merth-admin-panel",
+  "name": "milo-admin-panel",
   "version": "0.1.0",
-  "homepage": "https://merthaddad.github.io/merth-admin-panel/",
+  "homepage": "https://merthaddad.github.io/milo-admin-panel/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
@@ -18,7 +18,6 @@
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "emoji-picker-react": "^3.6.2",
-    "gh-pages": "^4.0.0",
     "jquery": "^3.6.1",
     "moment": "^2.29.4",
     "react": "^18.2.0",
@@ -35,8 +34,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
